@@ -10,11 +10,14 @@
 @import "base/helper";
 @import "base/animations";
 
+@import "components/button";
+
 @import "layout/header";
 @import "layout/restaurants";
 @import "layout/fonctioning";
 @import "layout/book";
 @import "layout/footer";
+@import "layout/search";
 
 @import "pages/home";
 @import "pages/restaurant";
