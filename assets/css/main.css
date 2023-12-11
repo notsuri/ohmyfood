@@ -29,6 +29,10 @@ li {
   font-family: "Shrikhand", serif;
 }
 
+.container {
+  background-color: #f6f6f6;
+}
+
 .button {
   min-width: 186px;
   padding: 14px;
@@ -124,8 +128,8 @@ li {
   .restaurants {
     gap: 30px;
     padding: 0 0 30px 22px;
-    max-width: 1000px;
     margin: auto;
+    max-width: 1000px;
   }
   .restaurants__cards {
     display: flex;
