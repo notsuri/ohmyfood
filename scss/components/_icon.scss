@@ -1,13 +1,12 @@
 .icon {
   font-size: 1.1em;
   width: 1.4em;
+  cursor: pointer;
+
   &:hover {
-    position: absolute;
     color: $primary-color;
     font-weight: bold;
     transition: 1s;
-    opacity: 1;
-    cursor: pointer;
     color: transparent;
     background-clip: text;
     background: linear-gradient(

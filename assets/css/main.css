@@ -73,6 +73,31 @@ li {
   background: #fff;
 }
 
+@keyframes anim-menu {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.anim-entrance {
+  animation: anim-menu 1s ease-in-out both;
+  animation-delay: 0s;
+}
+
+.anim-dishies {
+  animation: anim-menu 1s ease-in-out both;
+  animation-delay: 0.8s;
+}
+
+.anim-desserts {
+  animation: anim-menu 1s ease-in-out both;
+  animation-delay: 1.6s;
+}
+
 .button {
   min-width: 186px;
   padding: 14px;
@@ -95,36 +120,15 @@ li {
   }
 }
 
-.favorite {
-  position: relative;
-  font-size: 1em;
-  width: 1em;
-  height: 1em;
-}
-.favorite .favorite-check,
-.favorite .favorite-uncheck {
-  position: absolute;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.4s ease;
-}
-
 .icon {
   font-size: 1.1em;
   width: 1.4em;
+  cursor: pointer;
 }
 .icon:hover {
-  position: absolute;
   color: #9356dc;
   font-weight: bold;
   transition: 1s;
-  opacity: 1;
-  cursor: pointer;
   color: transparent;
   background-clip: text;
   background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);

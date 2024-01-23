@@ -1,3 +1,4 @@
+//****************************LOADING************************************
 @keyframes load {
   to {
     transform: rotate(1turn);
@@ -36,4 +37,23 @@
   align-items: center;
   justify-content: center;
   background: #fff;
+}
+//********** Fin Loading **********************
+
+//********** Anim entrance *********
+@keyframes anim-menu {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@each $i, $name in (0: "entrance", 1: "dishies", 2: "desserts") {
+  .anim-#{$name} {
+    animation: anim-menu $anim-menu-duration ease-in-out both;
+    animation-delay: $i * $anim-menu-delay;
+  }
 }
