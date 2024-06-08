@@ -39,16 +39,18 @@ li {
   }
 }
 .loader {
+  --loader-mask: conic-gradient(#0000, #000),
+    linear-gradient(0deg, #000 0, #000 100%) content-box;
+
   width: 120px;
   padding: 15px;
   background: #9356dc;
   aspect-ratio: 1;
   border-radius: 50%;
-  --_m: conic-gradient(#0000, #000), linear-gradient(#000 0 0) content-box;
-  -webkit-mask: var(--_m);
-  mask: var(--_m);
-  -webkit-mask-composite: source-out;
+  mask: var(--loader-mask);
+  -webkit-mask: var(--loader-mask);
   mask-composite: subtract;
+  -webkit-mask-composite: source-out;
   box-sizing: border-box;
   animation: load 3s linear infinite;
 }
@@ -171,8 +173,7 @@ li {
 .restaurants__img {
   width: 100%;
   height: 231px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__article {
@@ -423,8 +424,7 @@ li {
 .page-restaurant__image {
   width: 100%;
   height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .page-restaurant__title {
   font-size: 28px;
@@ -508,12 +508,13 @@ li {
   .page-restaurant__image {
     width: 100%;
     height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .page-restaurant__content {
     max-width: 1050px;
     margin: auto;
     margin-top: -40px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
